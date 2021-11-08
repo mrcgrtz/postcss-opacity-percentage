@@ -1,6 +1,6 @@
 # PostCSS Opacity Percentage
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dreamseer/postcss-opacity-percentage/test/main)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dreamseer/postcss-opacity-percentage/Test/main)
 [![Coverage Status](https://coveralls.io/repos/github/Dreamseer/postcss-opacity-percentage/badge.svg?branch=main)](https://coveralls.io/github/Dreamseer/postcss-opacity-percentage?branch=main)
 [![Install size](https://packagephobia.now.sh/badge?p=postcss-opacity-percentage)](https://packagephobia.now.sh/result?p=postcss-opacity-percentage)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
