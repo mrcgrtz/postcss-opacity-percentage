@@ -32,11 +32,13 @@
   "scripts": {
     "format": "xo --fix",
     "test": "xo && c8 ava",
-    "coverage": "c8 report --reporter=lcov"
+    "coverage": "c8 report --reporter=lcov",
+		"publish": "clean-publish"
   },
   "devDependencies": {
     "ava": "^3.15.0",
     "c8": "^7.10.0",
+    "clean-publish": "^3.4.3",
     "husky": "^7.0.4",
     "lint-staged": "^11.2.6",
     "xo": "^0.46.4"
