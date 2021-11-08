@@ -5,12 +5,12 @@ const plugin = require('../index.js');
 
 const getFixturePath = name => `tests/fixtures/${name}.css`;
 
-const readFixture = name => fs.readFileSync(getFixturePath(name), 'utf8');
+const readFixture = async name => fs.promises.readFile(getFixturePath(name), 'utf8');
 
 const testFixture = async (name, pluginOptions = {}, postcssOptions = {}) => {
 	postcssOptions.from = getFixturePath(name);
-	const test = readFixture(name);
-	const expected = readFixture(`${name}-expected`);
+	const test = await readFixture(name);
+	const expected = await readFixture(`${name}-expected`);
 	const result = await postcss([plugin(pluginOptions)]).process(test, postcssOptions);
 
 	return {expected, result};
