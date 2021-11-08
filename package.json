@@ -1,6 +1,6 @@
 {
   "name": "postcss-opacity-percentage",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "PostCSS plugin to transform percentage-based opacity values to more compatible floating-point values.",
   "keywords": [
     "postcss",
@@ -26,9 +26,9 @@
     "node": ">=16"
   },
   "main": "index.js",
-	"files": [
-		"index.js"
-	],
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "format": "xo --fix",
     "test": "xo && c8 ava",
