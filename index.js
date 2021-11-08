@@ -1,9 +1,15 @@
+const doNothingValues = new Set([
+	'inherit',
+	'initial',
+	'revert',
+	'unset',
+]);
+
 module.exports = () => ({
 	postcssPlugin: 'postcss-opacity-percentage',
 	Once(root) {
 		root.walkDecls(decl => {
-			/* istanbul ignore if */
-			if (decl.prop !== 'opacity' || !decl.value || !decl.value.endsWith('%')) {
+			if (decl.prop !== 'opacity' || !decl.value || !decl.value.endsWith('%') || doNothingValues.has(decl.value)) {
 				return;
 			}
 

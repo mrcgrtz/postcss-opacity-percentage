@@ -28,6 +28,12 @@ test('Does not transform opacity with a floating point value', async t => {
 	t.deepEqual(result.css, expected);
 });
 
+test('Textual opacity value keeps unchanged', async t => {
+	const {expected, result} = await testFixture('do-nothing-value');
+	t.is(result.warnings().length, 0);
+	t.deepEqual(result.css, expected);
+});
+
 test('Empty opacity value does not stop the plugin', async t => {
 	const {expected, result} = await testFixture('empty-value');
 	t.is(result.warnings().length, 0);
