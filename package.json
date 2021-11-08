@@ -1,6 +1,6 @@
 {
   "name": "postcss-opacity-percentage",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "PostCSS plugin to transform percentage-based opacity values to more compatible floating-point values.",
   "keywords": [
     "postcss",
@@ -33,7 +33,7 @@
     "format": "xo --fix",
     "test": "xo && c8 ava",
     "coverage": "c8 report --reporter=lcov",
-		"publish": "clean-publish"
+    "publish": "clean-publish"
   },
   "devDependencies": {
     "ava": "^3.15.0",
