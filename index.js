@@ -9,7 +9,7 @@ module.exports = () => ({
 	postcssPlugin: 'postcss-opacity-percentage',
 	Once(root) {
 		root.walkDecls(decl => {
-			if (decl.prop !== 'opacity' || !decl.value || !decl.value.endsWith('%') || doNothingValues.has(decl.value)) {
+			if (decl.prop !== 'opacity' || !decl.value || decl.value.startsWith('var(') || !decl.value.endsWith('%') || doNothingValues.has(decl.value)) {
 				return;
 			}
 
