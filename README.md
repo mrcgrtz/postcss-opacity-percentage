@@ -6,7 +6,7 @@
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 [![MIT license](https://img.shields.io/github/license/dreamseer/postcss-opacity-percentage.svg)](https://github.com/Dreamseer/postcss-opacity-percentage/blob/main/LICENSE.md)
 
-[PostCSS](https://github.com/postcss/postcss) plugin to transform percentage-based opacity values to more compatible floating-point values.
+[PostCSS](https://github.com/postcss/postcss) plugin to transform [percentage-based opacity values](https://www.w3.org/TR/css-color-4/#transparency) to more compatible floating-point values.
 
 ## Install
 
