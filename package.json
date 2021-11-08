@@ -26,6 +26,9 @@
     "node": ">=16"
   },
   "main": "index.js",
+	"files": [
+		"index.js"
+	],
   "scripts": {
     "format": "xo --fix",
     "test": "xo && c8 ava",
