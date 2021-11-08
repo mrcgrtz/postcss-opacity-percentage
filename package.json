@@ -1,0 +1,52 @@
+{
+  "name": "postcss-opacity-percentage",
+  "version": "0.0.1",
+  "description": "PostCSS plugin to transform percentage-based opacity values to more compatible floating-point values.",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "opacity"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dreamseer/postcss-opacity-percentage.git"
+  },
+  "funding": {
+    "type": "kofi",
+    "url": "https://ko-fi.com/dreamseer"
+  },
+  "author": {
+    "name": "Marc Görtz",
+    "email": "git@marcgoertz.de",
+    "url": "https://marcgoertz.de/"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "main": "index.js",
+  "scripts": {
+    "format": "xo --fix",
+    "test": "xo && c8 ava",
+    "coverage": "c8 report --reporter=lcov"
+  },
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "c8": "^7.10.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.6",
+    "xo": "^0.46.4"
+  },
+  "peerDependencies": {
+    "postcss": "^8.3.11"
+  },
+  "lint-staged": {
+    "*.js": "xo --fix"
+  },
+  "xo": {
+    "rules": {
+      "unicorn/prefer-module": "off"
+    }
+  }
+}
