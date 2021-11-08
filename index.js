@@ -7,14 +7,14 @@ const doNothingValues = new Set([
 
 module.exports = () => ({
 	postcssPlugin: 'postcss-opacity-percentage',
-	Once(root) {
-		root.walkDecls(decl => {
-			if (decl.prop !== 'opacity' || !decl.value || decl.value.startsWith('var(') || !decl.value.endsWith('%') || doNothingValues.has(decl.value)) {
+	Declaration: {
+		opacity: decl => {
+			if (!decl.value || decl.value.startsWith('var(') || !decl.value.endsWith('%') || doNothingValues.has(decl.value)) {
 				return;
 			}
 
 			decl.value = String(Number.parseFloat(decl.value) / 100);
-		});
+		},
 	},
 });
 
