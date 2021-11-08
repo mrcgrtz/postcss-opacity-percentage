@@ -13,7 +13,7 @@ module.exports = () => ({
 				return;
 			}
 
-			decl.value = Number.parseFloat(decl.value) / 100;
+			decl.value = String(Number.parseFloat(decl.value) / 100);
 		});
 	},
 });
