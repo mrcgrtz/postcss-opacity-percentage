@@ -9,14 +9,17 @@
     "opacity"
   ],
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Dreamseer/postcss-opacity-percentage.git"
-  },
-  "funding": {
-    "type": "kofi",
-    "url": "https://ko-fi.com/mrcgrtz"
-  },
+  "repository": "github:mrcgrtz/postcss-opacity-percentage",
+  "funding": [
+  	{
+    	"type": "kofi",
+      "url": "https://ko-fi.com/mrcgrtz"
+   	},
+  	{
+    	"type": "liberapay",
+      "url": "https://liberapay.com/mrcgrtz"
+   	}
+  ],
   "author": {
     "name": "Marc Görtz",
     "email": "git@marcgoertz.de",

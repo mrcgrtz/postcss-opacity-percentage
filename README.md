@@ -1,10 +1,10 @@
 # PostCSS Opacity Percentage
 
-[![Test](https://github.com/Dreamseer/postcss-opacity-percentage/actions/workflows/test.yml/badge.svg)](https://github.com/Dreamseer/postcss-opacity-percentage/actions/workflows/test.yml)
-[![Coverage Status](https://coveralls.io/repos/github/Dreamseer/postcss-opacity-percentage/badge.svg?branch=main)](https://coveralls.io/github/Dreamseer/postcss-opacity-percentage?branch=main)
+[![Test](https://github.com/mrcgrtz/postcss-opacity-percentage/actions/workflows/test.yml/badge.svg)](https://github.com/mrcgrtz/postcss-opacity-percentage/actions/workflows/test.yml)
+[![Coverage Status](https://coveralls.io/repos/github/mrcgrtz/postcss-opacity-percentage/badge.svg?branch=main)](https://coveralls.io/github/mrcgrtz/postcss-opacity-percentage?branch=main)
 [![Install size](https://packagephobia.now.sh/badge?p=postcss-opacity-percentage)](https://packagephobia.now.sh/result?p=postcss-opacity-percentage)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
-[![MIT license](https://img.shields.io/github/license/dreamseer/postcss-opacity-percentage.svg)](https://github.com/Dreamseer/postcss-opacity-percentage/blob/main/LICENSE.md)
+[![MIT license](https://img.shields.io/github/license/mrcgrtz/postcss-opacity-percentage.svg)](https://github.com/mrcgrtz/postcss-opacity-percentage/blob/main/LICENSE.md)
 
 [PostCSS](https://github.com/postcss/postcss) plugin to transform [percentage-based opacity values](https://www.w3.org/TR/css-color-4/#transparency) to more compatible floating-point values.
 

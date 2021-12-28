@@ -7,4 +7,12 @@ updates:
     schedule:
       interval: "weekly"
     assignees:
-      - "dreamseer"
+      - "mrcgrtz"
+
+  # Check for updates to GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    assignees:
+      - "mrcgrtz"
