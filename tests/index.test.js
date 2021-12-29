@@ -10,7 +10,7 @@ const readFixture = async name => fs.promises.readFile(getFixturePath(name), 'ut
 const testFixture = async (t, name, pluginOptions = {}, postcssOptions = {}) => {
 	postcssOptions.from = getFixturePath(name);
 	const actual = await readFixture(name);
-	const expected = await readFixture(`${name}-expected`);
+	const expected = await readFixture(`${name}-${Object.keys(pluginOptions).map(key => `${key}-`)}expected`);
 	const result = await postcss([plugin(pluginOptions)]).process(actual, postcssOptions);
 
 	t.is(result.warnings().length, 0);
@@ -28,5 +28,9 @@ const tests = {
 for (const [fixture, description] of Object.entries(tests)) {
 	test(description, async t => {
 		await testFixture(t, fixture);
+	});
+
+	test(`${description} (with preserve option)`, async t => {
+		await testFixture(t, fixture, {preserve: true});
 	});
 }

@@ -48,6 +48,34 @@ postcss([
 
 See [PostCSS](https://github.com/postcss/postcss) documentation for examples for your environment.
 
+## Options
+
+### `preserve`
+
+The `preserve` option determines whether the original percentage value is preserved. By default, it is not preserved.
+
+```js
+// Keep the original notation
+postcss([
+  require('postcss-opacity-percentage')({preserve: true}),
+]);
+```
+
+```css
+/* Input */
+.foo {
+  opacity: 45%;
+}
+```
+
+```css
+/* Output */
+.foo {
+  opacity: 0.45;
+  opacity: 45%;
+}
+```
+
 ## License
 
 MIT © [Marc Görtz](https://marcgoertz.de/)
