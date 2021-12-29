@@ -11,14 +11,14 @@
   "license": "MIT",
   "repository": "github:mrcgrtz/postcss-opacity-percentage",
   "funding": [
-  	{
-    	"type": "kofi",
+    {
+      "type": "kofi",
       "url": "https://ko-fi.com/mrcgrtz"
-   	},
-  	{
-    	"type": "liberapay",
+    },
+    {
+      "type": "liberapay",
       "url": "https://liberapay.com/mrcgrtz"
-   	}
+    }
   ],
   "author": {
     "name": "Marc Görtz",
