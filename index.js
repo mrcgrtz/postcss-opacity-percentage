@@ -8,7 +8,7 @@ const doNothingValues = new Set([
 /**
  * @type {import('postcss').PluginCreator}
  */
-module.exports = ({preserve = false}) => ({
+module.exports = ({preserve = false} = {}) => ({
 	postcssPlugin: 'postcss-opacity-percentage',
 	Declaration: {
 		opacity: decl => {
