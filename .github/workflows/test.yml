@@ -21,9 +21,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Installation
       run: npm ci
-    # TODO: Can this be solved better?
-    - name: Install postcss
-      run: npm i -D postcss
     - name: Test
       run: |
         npm test
