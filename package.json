@@ -26,7 +26,7 @@
     "url": "https://marcgoertz.de/"
   },
   "engines": {
-    "node": ">=16"
+    "node": "^12 || ^14 || >=16"
   },
   "main": "index.js",
   "files": [
@@ -44,10 +44,8 @@
     "clean-publish": "^4.0.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.0.2",
+    "postcss": "^8.4.5",
     "xo": "^0.47.0"
-  },
-  "peerDependencies": {
-    "postcss": ">=8"
   },
   "lint-staged": {
     "*.js": "xo --fix"
