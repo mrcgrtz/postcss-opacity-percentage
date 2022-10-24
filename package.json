@@ -39,7 +39,7 @@
     "publish": "clean-publish"
   },
   "devDependencies": {
-    "ava": "^4.0.1",
+    "ava": "^5.0.1",
     "c8": "^7.10.0",
     "clean-publish": "^4.0.0",
     "husky": "^8.0.0",
