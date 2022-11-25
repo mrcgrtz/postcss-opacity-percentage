@@ -26,7 +26,7 @@
     "url": "https://marcgoertz.de/"
   },
   "engines": {
-		"node": "^14 || ^16 || >=18"
+    "node": "^14 || ^16 || >=18"
   },
   "main": "index.js",
   "files": [
@@ -42,7 +42,7 @@
     "postcss": "^8.2"
   },
   "devDependencies": {
-    "ava": "^4.0.1",
+    "ava": "^5.1.1",
     "c8": "^7.10.0",
     "clean-publish": "^4.0.0",
     "husky": "^8.0.0",
