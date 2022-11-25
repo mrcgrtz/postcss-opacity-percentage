@@ -26,7 +26,7 @@
     "url": "https://marcgoertz.de/"
   },
   "engines": {
-    "node": "^12 || ^14 || >=16"
+		"node": "^14 || ^16 || >=18"
   },
   "main": "index.js",
   "files": [
