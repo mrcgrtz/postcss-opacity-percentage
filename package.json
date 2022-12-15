@@ -38,7 +38,7 @@
     "coverage": "c8 report --reporter=lcov",
     "publish": "clean-publish"
   },
-	"peerDependencies": {
+  "peerDependencies": {
     "postcss": "^8.2",
   },
   "devDependencies": {
