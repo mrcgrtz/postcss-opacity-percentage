@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require('node:fs');
 const postcss = require('postcss');
 const test = require('ava');
 const plugin = require('../index.js');
