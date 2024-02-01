@@ -36,6 +36,7 @@
     "format": "xo --fix",
     "test": "xo && c8 ava",
     "coverage": "c8 report --reporter=lcov",
+    "prepare": "husky",
     "publish": "clean-publish"
   },
   "peerDependencies": {
