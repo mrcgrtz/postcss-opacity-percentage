@@ -1,9 +1,10 @@
+const test = require('node:test');
+const assert = require('node:assert');
 const fs = require('node:fs');
 const postcss = require('postcss');
-const test = require('ava');
 const plugin = require('../index.js');
 
-const getFixturePath = name => `tests/fixtures/${name}.css`;
+const getFixturePath = name => `test/fixtures/${name}.css`;
 
 const readFixture = async name => fs.promises.readFile(getFixturePath(name), 'utf8');
 
@@ -13,8 +14,8 @@ const testFixture = async (t, name, pluginOptions = {}, postcssOptions = {}) => 
 	const expected = await readFixture(`${name}-${Object.keys(pluginOptions).map(key => `${key}-`)}expected`);
 	const result = await postcss([plugin(pluginOptions)]).process(actual, postcssOptions);
 
-	t.is(result.warnings().length, 0);
-	t.deepEqual(result.css, expected);
+	assert.strictEqual(result.warnings().length, 0);
+	assert.deepEqual(result.css, expected);
 };
 
 const tests = {
