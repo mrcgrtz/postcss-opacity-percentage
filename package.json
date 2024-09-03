@@ -26,7 +26,7 @@
     "url": "https://marcgoertz.de/"
   },
   "engines": {
-    "node": "^16 || >=18"
+    "node": ">=18"
   },
   "main": "index.js",
   "files": [
@@ -34,16 +34,15 @@
   ],
   "scripts": {
     "format": "xo --fix",
-    "test": "xo && c8 ava",
+    "test": "xo && c8 node --test",
     "coverage": "c8 report --reporter=lcov",
     "prepare": "husky",
     "publish": "clean-publish"
   },
   "peerDependencies": {
-    "postcss": "^8.2"
+    "postcss": "^8.4"
   },
   "devDependencies": {
-    "ava": "^6.0.1",
     "c8": "^10.1.2",
     "clean-publish": "^5.0.0",
     "husky": "^9.0.7",
