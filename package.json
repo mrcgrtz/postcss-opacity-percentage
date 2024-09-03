@@ -9,7 +9,10 @@
     "opacity"
   ],
   "license": "MIT",
-  "repository": "github:mrcgrtz/postcss-opacity-percentage",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrcgrtz/postcss-opacity-percentage.git"
+  },
   "funding": [
     {
       "type": "kofi",
