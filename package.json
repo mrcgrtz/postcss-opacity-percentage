@@ -51,7 +51,7 @@
     "husky": "^9.0.7",
     "lint-staged": "^16.1.0",
     "postcss": "^8.4.5",
-    "xo": "^0.54.0"
+    "xo": "^1.0.5"
   },
   "lint-staged": {
     "*.js": "xo --fix"
