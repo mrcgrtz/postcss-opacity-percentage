@@ -47,7 +47,7 @@
   },
   "devDependencies": {
     "c8": "^10.1.2",
-    "clean-publish": "^5.0.0",
+    "clean-publish": "^6.0.1",
     "husky": "^9.0.7",
     "lint-staged": "^16.1.0",
     "postcss": "^8.4.5",
