@@ -61,7 +61,8 @@
   },
   "xo": {
     "rules": {
-      "unicorn/prefer-module": "off"
+      "unicorn/prefer-module": "off",
+      "unicorn/no-anonymous-default-export": "off"
     }
   }
 }
