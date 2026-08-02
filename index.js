@@ -5,9 +5,7 @@ const doNothingValues = new Set([
 	'unset',
 ]);
 
-/**
- * @type {import('postcss').PluginCreator}
- */
+/** @type {import('postcss').PluginCreator} */
 module.exports = ({preserve = false} = {}) => ({
 	postcssPlugin: 'postcss-opacity-percentage',
 	Declaration: {
@@ -16,6 +14,7 @@ module.exports = ({preserve = false} = {}) => ({
 				return;
 			}
 
+			// eslint-disable-next-line unicorn/prefer-number-coercion -- We want to parse the value as a float, not coerce it to a number.
 			decl.cloneBefore({value: String(Number.parseFloat(decl.value) / 100)});
 			if (!preserve) {
 				decl.remove();
