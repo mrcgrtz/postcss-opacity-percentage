@@ -51,7 +51,7 @@
     "husky": "^9.0.7",
     "lint-staged": "^17.2.0",
     "postcss": "^8.4.5",
-    "xo": "^2.0.2"
+    "xo": "^4.0.0"
   },
   "overrides": {
     "yargs": "^18.0.0"
@@ -61,8 +61,9 @@
   },
   "xo": {
     "rules": {
-      "unicorn/prefer-module": "off",
-      "unicorn/no-anonymous-default-export": "off"
+      "jsdoc/require-description": "off",
+      "unicorn/no-anonymous-default-export": "off",
+      "unicorn/prefer-module": "off"
     }
   }
 }

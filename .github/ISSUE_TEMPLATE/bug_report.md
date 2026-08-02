@@ -25,9 +25,9 @@ A clear and concise description of what you expected to happen or to appear as o
 
 ## Environment
 
-- OS [e.g. macOS]
-- Plugin version [e.g. 1.1.1]
-- Using with [e.g. CLI/Webpack/Gulp/...]
+- OS: e.g. macOS
+- Plugin version: e.g. 1.1.1
+- Using with e.g. CLI/Webpack/Gulp/...
 
 ## Additional context
 
